@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quilt.io - Design</title>
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./resources/images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./resources/images/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="./resources/images/favicon.ico" sizes="16x16" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- NAV -->
+<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light  justify-content-between">
+  <!-- Mobile Menu Button   -->
+  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="this.blur();">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- DESKTOP NAV   -->
+  <a class="navbar-brand ml-4" href="#">
+    <div class="logo-holder">
+    <span id='logo-text'>Quilt</span>
+    <div id="darkblue" class="row logo-row"></div>
+    <div id="blue" class="row logo-row"></div>
+    <div id="lightblue" class="row logo-row"></div>
+    <div id="purple" class="row logo-row"></div>
+    <div id="lightred" class="row logo-row"></div>
+    <div id="red" class="row logo-row"></div>
+    <div id="darkred" class="row logo-row"></div>
+    </div>
+  </a>
+  <div class="collapse navbar-collapse  mt-3.5 my-lg-0 justify-content-end" style="background:#FEF0EB;"id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <!--  ACCOUNT -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Account
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><form>
+             <div class="form-group">
+               <input type="email" id="form-item"class="form-control"  aria-describedby="emailHelp" placeholder="Email or Username">
+               <input type="password"  id="form-item" class="form-control"  aria-describedby="emailHelp" placeholder="Password">
+              </div>
+            </form></li>
+          <li class="form-btns">
+            <btn class="form-btn btn btn-primary">
+              Login
+            </btn>
+            <btn class="form-btn btn btn-success">
+              Sign Up
+            </btn>
+          </li>
+        </ul>
+      </li>
+      <!--  SAVED ARTICLES -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle saved-caret" data-toggle="dropdown" href="#">Saved Articles
+        </a>
+        <ul class="dropdown-menu">
+          <li><span id="saved-article-note">Please login to view your saved articles</span></li>
+        </ul>
+      </li>
+      <!--  HOW Page -->
+      <li class="nav-item">
+        <a class="nav-link" href="./index-how.html">How Does It Work?</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--HEADER -->
+<div class="header container-fluid mr-0">
+  <div class="row text-center">
+    <!-- LOGO -->
+      <div class="col-md-5">
+        <!--  Logo Line    -->
+        <div class="desk-header-right">
+          <h1 class="desk-logo"><span style="color: #4600FF">Q</span><span style="color: #4F00CF">U</span><span style="color: #90007F">I</span><span style="color: #C50044">L</span><span style="color: #FF0000">T</span><span style="font-size:10px">&copy</span></h1>
+          <hr style="width:50%">
+          <span style="color:#4600FF">News - Policy - Opinion</span>
+        </div>
+      </div>
+      <!-- FILLER DIV -->
+      <div class="col-md">
+      </div>
+      <!-- SORT AND FILTER BOX -->
+      <div class="col-md-5 row-sm d-md-block pt-3 px-0 " id="filtercol">
+        <div class="row justify-content-evenly">
+          <!--   FILTER OPTIONS         -->
+          <div class="col text-center p-0">
+            <div class="filter-box">
+              <div class="text-left ml-2">
+              <input type="checkbox" id="c1" name="cc" />
+              <label for="c1"><span></span>Media Source</label>
+                <input type="checkbox" id="c2" name="cc" />
+                <label for="c2"><span></span>Journalist</label>
+                <input type="checkbox" id="c3" name="cc" />
+                <label for="c3"><span></span>Opinion</label>
+              </div>
+            </div>
+          </div>
+          <!-- SHADE BOX    -->
+          <span class="bias bias-lib">Liberal</span>
+          <div class="col-md p-0">
+            <!-- Desktop Shades -->
+           <div class="container-fluid fade-box">
+             <div class="holer">
+                <div class="button-group filters-button-group">
+                    <div class="row">
+                      <!--       <button class="button is-checked" data-filter="*">show all</button> -->
+                      <!--   <button class="button" data-filter=".metal">metal</button>-->
+                      <div class="col fade-check" id="red1">
+                        <button class="button" data-filter=".red1" id="red1">r1</button>
+                      </div>
+                      <div class="col fade-check" id="red3">
+                        <button class="button" data-filter=".red3" id="red3">r3</button>
+                      </div>
+                      <div class="col fade-check" id="red4">
+                        <button class="button" data-filter=".red4" id="red4">r4</button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col fade-check" id="blue1">
+                        <button class="button"  data-filter=".blue1" id="blue1">b1</button>
+                      </div>
+                      <div class="col fade-check" id="purple1">
+                        <button class="button" data-filter=".purple1" id="purple1">p0</button>
+                      </div>
+                      <div class="col fade-check" id="red2">
+                        <button class="button" data-filter=".red2" id="red2">r2</button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col fade-check" id="blue4">
+                        <button class="button" data-filter=".blue4" id="blue4">b4</button>
+                      </div>
+                      <div class="col fade-check" id="blue3">
+                        <button class="button" data-filter=".blue3" id="blue3">b3</button>
+                      </div>
+                      <div class="col fade-check" id="blue2">
+                        <button class="button" data-filter=".blue2" id="blue2">b2</button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+          <!-- Mobile Shades -->
+          <div class="row instructions-mobile">
+            <p id="instructions-line"><span class="d-md-none">Select political bias by color</span></p>
+          </div>
+        <div class="button-group fade-box-mobile filters-button-group row">
+           <div class="col fade-check" id="blue4">
+             <button class="button" data-filter=".blue4" id="blue4">b4</button>
+           </div>
+           <div class="col fade-check" id="blue3">
+             <button class="button" data-filter=".blue3" id="blue3">b3</button>
+           </div>
+           <div class="col fade-check" id="blue2">
+              <button class="button" data-filter=".blue2" id="blue2">b2</button>
+           </div>
+           <div class="col fade-check" id="blue1">
+             <button class="button"  data-filter=".blue1" id="blue1">b1</button>
+           </div>
+           <div class="col fade-check" id="purple1">
+             <button class="button" data-filter=".purple1" id="purple1">p0</button>
+           </div>
+           <div class="col fade-check" id="red1">
+              <button class="button" data-filter=".red1" id="red1">r1</button>
+            </div>
+           <div class="col fade-check" id="red2">
+             <button class="button" data-filter=".red2" id="red2">r2</button>
+           </div>
+           <div class="col fade-check" id="red3">
+              <button class="button" data-filter=".red3" id="red3">r3</button>
+            </div>
+           <div class="col fade-check" id="red4">
+               <button class="button" data-filter=".red4" id="red4">r4</button>
+             </div>
+         </div>
+
+        </div>
+        <span class="bias">Conservative</span>
+      </div>
+      </div>
+      <div class="col-md">
+      </div>
+  </div>
+</div>
+<!--MAIN -->
+<div class="grid container-fluid">
+  <!-- ROW 1 -->
+  <a href="https://www.pbs.org/newshour/nation/family-separations-push-new-protesters-to-join-immigrant-activists">
+    <div class="element-item purple1 metal news-box col-md-4 col-sm " id="purpleLink" data-category="purple1">
+      <h3>Family separations push new protesters to join activists</h3>
+      <p class="media-source">PBS - 9:45AM</p>
+      <p class="journalist">By Gillian Falccus</p>
+      <div class="saved-icon"></div>
+    </div>
+  </a>
+  <a href="https://theintercept.com/2018/06/27/andrew-smith-ftc/">
+    <div class="element-item blue2 news-box col-md-4 col-sm" id="blue2Link" data-category="blue2">
+      <h3>Trump has appointed some major corporate cronies</h3>
+      <p class="media-source">The Intercept - 9:45AM</p>
+      <p class="journalist">By David Dayen</p>
+    </div>
+  </a>
+  <a href="https://www.nytimes.com/2018/06/28/us/politics/trump-anthony-kennedy-retirement.html?hp&action=click&pgtype=Homepage&clickSource=story-heading&module=first-column-region&region=top-news&WT.nav=top-news">
+    <div class="element-item blue1 metal news-box col-md-4 col-sm" id="blue1Link" data-category="post-transition">
+      <h3>Inside the White House’s Quiet Campaign to Create a Supreme Court Opening</h3>
+      <p class="media-source">New York Times - 8:20AM</p>
+      <p class="journalist">By Adam Liptak and Maggie Haberman</p>
+    </div>
+  </a>
+  <!-- ROW 2 -->
+  <a href="https://www.axios.com/world-trade-organization-gap-between-china-trump-5e138814-81b1-4fe0-ac9d-04cad87a341b.html">
+    <div class="element-item blue1 metal news-box col-md-4 col-sm" id="blue1Link2"  data-category="post-transition">
+      <h3>Between the lines: China and Trump are in a different place on the WTO</h3>
+      <p class="media-source">Axios - 10:39AM</p>
+      <p class="journalist">By Bill Bishop</p>
+    </div>
+  </a>
+  <a href="https://www.apnews.com/075acbb9ac834fc78080f8305388a793/Concern-over-using-US-military-to-help-border-enforcement">
+    <div class="element-item purple1 metal news-box col-md-4 col-sm" id="purpleLink2" data-category="transition">
+      <h3>Concern over using US military to help border enforcement</h3>
+      <p class="media-source">Associated Press - 10:39AM</p>
+      <p class="journalist">By Roburt Burns</p>
+    </div>
+  </a>
+  <a href="https://www.wsj.com/articles/with-trump-supreme-court-coming-democrats-weigh-strategy-1530209462">
+    <div class="element-item red1 metal news-box col-md-4 col-sm" id="red1Link" data-category="alkali" id="redA">
+      <h3>Both Parties Mobilize for Supreme Court Battle</h3>
+      <p class="media-source">Wall Street Journal - 10:01AM</p>
+      <p class="journalist">By Louise Radnofsky</p>
+    </div>
+  </a>
+  <!-- ROW 3 -->
+  <a href="http://thehill.com/policy/national-security/394733-five-highlights-from-the-tense-wray-rosenstein-hearing">
+    <div class="element-item red1 metal news-box col-md-4 col-sm" id="red1Link2" data-category="alkali">
+      <h3>Five highlights from the tense Wray-Rosenstein hearing</h3>
+      <p class="media-source">The Hill - 9:01AM</p>
+      <p class="journalist">By Katie Bo Williams</p>
+    </div>
+  </a>
+  <a href="https://www.bloomberg.com/news/articles/2018-06-29/trump-s-trade-war-challenge-figuring-out-who-s-the-enemy">
+    <div class="element-item purple1 metal news-box col-md-4 col-sm" id="purpleLink3" data-category="transition">
+      <h3>In waging trade war, Trump must pick an enemy</h3>
+      <p class="media-source">Bloomberg News - 11:21AM</p>
+      <p class="journalist">By Matthew Campbell</p>
+    </div>
+  </a>
+  <a href="https://www.nationalreview.com/2018/06/democrats-done-pretending-to-be-moderate/">
+    <div class="element-item red2 metal news-box col-md-4 col-sm" id="red2Link" data-category="alkaline-earth">
+      <h3>The Democrats Are Done Pretending to Be Moderate</h3>
+      <p class="media-source">Nation Review - 11:21AM</p>
+      <p class="journalist">By Kyle Smith</p>
+    </div>
+  </a>
+  <!-- ROW 4 -->
+  <a href="https://www.reuters.com/article/us-mexico-election-financing/anti-corruption-watchdogs-wonder-who-is-funding-mexicos-presidential-candidates-idUSKBN1JP0GG">
+    <div class="element-item purple1 metal news-box col-md-4 col-sm" id="purpleLink4" data-category="transition">
+      <h3 class="news-">'Who is funding Mexico's presidential candidates?'</h3>
+      <p class="media-source">Rueters News - 12:06PM</p>
+      <p class="journalist">By Christine Murray</p>
+    </div>
+  </a>
+  <a href="https://www.npr.org/2018/06/29/624401907/trumps-new-irs-postcard-is-not-so-simple-and-not-really-a-postcard">
+    <div class="element-item blue1 metal news-box col-md-4 col-sm" id="blue1Link3" data-category="post-transition">
+      <h3 class="news-">Trump's New IRS 'Postcard' Is Not So Simple"</h3>
+      <p class="media-source">NPR - 6:30AM</p>
+      <p class="journalist">By Brian Naylor</p>
+    </div>
+  </a>
+  <a href="https://mic.com/articles/190064/trump-reportedly-threatens-to-pull-us-out-of-world-trade-organization#.nS57x5Zyz">
+    <div class="element-item blue2 news-box col-md-4 col-sm" id="blue2Link2" data-category="metalloid">
+      <h3 class="news-">Trump threats to pull US out of WTO"</h3>
+      <p class="media-source">Mic.com - 10:30AM</p>
+      <p class="journalist">By Eric Lutz</p>
+    </div>
+  </a>
+  <!-- ROW 5 -->
+  <a href="https://www.afp.com/en/news/205/new-arms-race-undermining-landmark-nuclear-control-treaty-experts-doc-16u6w01">
+    <div class="element-item purple1 metal news-box col-md-4 col-sm" id="purpleLink5"data-category="transition">
+      <h3 class="news-">New arms race undermining landmark nuclear control treaty"</h3>
+      <p class="media-source">AFP - 7:30AM</p>
+      <p class="journalist">By Mike Farris</p>
+    </div>
+  </a>
+  <a href="http://thefederalist.com/2018/06/29/why-americans-should-care-about-mexicos-presidential-election/">
+    <div class="element-item red3 metal inner-transition news-box col-md-4 col-sm" id="red3Link"  data-category="lanthanoid">
+      <h3 class="news-">Why Mexico’s Presidential Election Matters"</h3>
+      <p class="media-source">The Federalist - 2:PM</p>
+      <p class="journalist">By Helen Raleigh</p>
+    </div>
+  </a>
+  <a href="https://www.motherjones.com/politics/2018/06/the-frontrunner-to-be-trumps-supreme-court-pick-is-the-forrest-gump-of-republican-politics/">
+    <div class="element-item blue4 nonmetal news-box col-md-4 col-sm" id="blue4Link" data-category="noble-gas">
+      <h3 class="news-">Trump’s SCOTUS pick is the “Forrest Gump of Republican Politics"</h3>
+      <p class="media-source">Mother Jones - 9:45AM</p>
+      <p class="journalist">By Elizabeth Dias and Jeremy W. Peters</p>
+    </div>
+  </a>
+  <!-- ROW 6 -->
+  <a href="https://www.buzzfeed.com/tariniparti/trump-white-house-staff-leaving-hiring-empty?utm_term=.xr9364gEVm#.hcOWX8jONe">
+    <div class="element-item blue3 nonmetal news-box col-md-4 col-sm" id="blue3Link" data-category="diatomic">
+      <h3 class="news-">White House Is Becoming A Ghost Town. Trump Loyalists Worry"</h3>
+      <p class="media-source">Buzzfeed News - 11:02AM</p>
+      <p class="journalist">By Tarini Parti</p>
+    </div>
+  </a>
+  <a href="http://www.breitbart.com/big-government/2018/06/29/hillary-clinton-condemns-bothsideism-of-trump-administration/">
+    <div class="element-item red4 metal inner-transition news-box col-md-4 col-sm" id="red4Link" data-category="actinoid">
+      <h3 class="news-">Hillary Clinton Endorses Harassment of Women in Government</h3>
+      <p class="media-source">Breitbart News - 11:02AM</p>
+      <p class="journalist">By Joshua Caplan</p>
+    </div>
+  </a>
+  <a href="">
+    <div class="element-item red4 metal inner-transition  news-box col-md-4 col-sm" id="red4Link2" data-category="actinoid">
+      <h3 class="news-">Pro-Trump candidate says club canceled event over her ‘political views’</h3>
+      <p class="media-source">The Blaze - 1:09PM</p>
+      <p class="journalist">By Dave Urbanski</p>
+    </div>
+  </a>
+</div>
+<!-- EMAIL LINE -->
+<div class="container-fluid email-line">
+    <div class="holder">
+      <div class="col"></div>
+      <div class="emailer col-5">
+      <span>DON'T MISS A BRIEF. SIGN UP FOR OUR DAILY EMAIL.</span>
+    </div>
+      <div class="form-group col-3">
+        <div class="row justify-content-center">
+        <label class=" text-center" id="email-label"for="exampleInputEmail1">Enter Email</label>
+        </div>
+        <input type="email" class="form-control" aria-describedby="emailHelp" >
+      </div>
+      <div class="btn col" id="email-button">
+        <i class="fa fa-arrow-right"></i>
+      </div>
+      <div class="col"></div>
+    </div>
+    <div class="row background-div">
+      <div class="col-md-3 background-div-lightblue"></div>
+      <div class="col-md-4 background-div-purple"></div>
+      <div class="col-md-1 background-div-magenta"></div>
+      <div class="col-md-2 background-div-peach"></div>
+      <div class="col-md-2 background-div-red"></div>
+    </div>
+</div>
+<!--FOOTER -->
+<div class ="page-footer" >
+  <!-- SUB FOOTER -->
+    <div class="row footer-content mx-0">
+            <!-- FOOTER LOGO    -->
+      <div class="col-md-2">
+        <div class="footer-logo text-center">
+           <h2 style="line-height: 4rem;"><span style="color: #4600FF">Q</span><span style="color: #4F00CF">U</span><span style="color: #90007F">I</span><span style="color: #C50044">L</span><span style="color: #FF0000">T</span><span style="font-size:10px">&copy</span></h2>
+          <hr>
+          <div class="row">
+            <div class="ball ball1"></div>
+            <div class="ball ball2"></div>
+          </div>
+          <div class="row">
+            <div class="ball ball3"></div>
+            <div class="ball ball4"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Left Spacing Col  -->
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-4 mid-foot-box">
+        <div class="row">
+          <div class="col p-0">
+            <button type="button" class="btn bg-transparent p-0 footer-head" data-toggle="collapse" data-target="#demo">News</button>
+            <div id="demo" class="collapse show">
+              <ul class="footer-links">
+             <li><a href="#">Senate</a></li>
+             <li><a href="#">House</a></li>
+             <li><a href="#">Campaign</a></li>
+          </ul></div>
+          </div>
+          <div class="col p-0">
+            <button type="button" class="btn bg-transparent p-0 footer-head" data-toggle="collapse" data-target="#demo2">Policy</button>
+            <div id="demo2" class="collapse">
+              <ul class="footer-links">
+                <li><a href="#">Defense</a></li>
+                <li><a href="#">Environment</a></li>
+                <li><a href="#">Finance</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col p-0">
+            <button type="button" class="btn bg-transparent p-0 footer-head" data-toggle="collapse" data-target="#demo3">Opinion</button>
+        <div id="demo3" class="collapse">
+          <ul class="footer-links">
+           <li><a href="#">Columnists</a></li>
+           <li><a href="#">Reports</a></li>
+           <li><a href="#">Editorials</a></li>
+          </ul>
+         </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+      </div>
+    </div>
+  <!-- COPYRIGHT -->
+  <div class="row pt-3 footer-copyright-row">
+    <div class="footer-copyright col px-md-4 p-sm-0"><span>© 2018 :
+      <a class="font-weight-light" style ="color:black"href="http://benmerrill.biz/"> Ben Merrill Design</a></span>
+    </div>
+    <div class="col text-right desk-contact-ads">
+      <ul class="contact-ads p-md-0">
+       <li><a href="#">Contact</a></li>
+       <li><a href="#">Ads</a></li>
+      </ul>
+    </div>
+    </div>
+  <!-- </div>
+  </div> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'></script>
+<script  src="js/index.js"></script>
+</body>
+</html>
