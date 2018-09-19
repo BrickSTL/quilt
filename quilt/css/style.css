@@ -14,11 +14,79 @@ nav{
   height: 5rem;
 }
 .navbar-brand{
-  border: 1px solid #191817;
-  padding: .5rem;
+  border: 1px solid #495057;
+  padding: 0 .6rem;
+  width:5.5%;
+  overflow:hidden;
+}
+.navbar-brand .row{
+  height: .6rem;
+  margin-right:1rem;
+  opacity: .7;
+  visibility:hidden;
+}
+#logo-text{
+  position: absolute;
+  color:#495057;
+  margin: 1.1% 0;
+  z-index: 2;
+  font-size:1.5rem;
+}
+.logo-holder{
+   width: 7rem;
+}
+#darkblue{
+  background:darkblue;
+}
+#blue{
+  background:blue;
+}
+#lightblue{
+  background:lightblue;
+}
+#purple{
+  background:purple;
+}
+#lightred{
+  background:pink;
+}
+#red{
+  background:red;
+}
+#darkred{
+  background:darkred;
 }
 .nav-link:hover{
   color:#6700FF;
+}
+.active{
+  text-decoration:underline;
+}
+/* NAV - ACCOUNT */
+.dropdown-menu{
+  min-width: 15rem;
+}
+#form-item{
+  margin:4% 0 6%;
+  padding:0;
+}
+.form-btns{
+  display:flex;
+  justify-content:center;
+}
+.form-btn{
+  height:2rem;
+  font-size:.8rem;
+  margin: 0 6%
+}
+/*NAV - SAVED ARTICLES*/
+.saved-caret::after{
+  display:none;
+}
+#saved-article-note{
+    display: flex;
+    margin: .5rem;
+    text-align: center;
 }
 .header {
   padding-top: 10%;
@@ -26,25 +94,32 @@ nav{
   padding-right: 0;
   margin-bottom: 7%;
 }
+/* HEADER */
 .header.row{
  margin:0;
 }
 .desk-logo{
   font-size:7rem;
 }
-
+#filtercol{
+ color: #101493;
+}
 .filter-box{
   height: 8.5rem;
-  width: 9.5rem;
-  padding-top:1rem;
-
 }
+.filter-box ul{
+  list-style:none;
+}
+.mobile-filters{
+  display:none;
+}
+/* CHECKBOXES */
 input[type="checkbox"] {
     display:none;
 }
 
 input[type="checkbox"] + label {
-    color:#101493;
+/*     color:#101493; */
 }
 
 input[type="checkbox"] + label span {
@@ -62,7 +137,6 @@ input[type="checkbox"]:checked + label span {
     background:#101493;
 }
 /* FADE BOX OPTIONS */
-
 .fade-box{
   border:1px #343436 solid;
 }
@@ -72,6 +146,7 @@ input[type="checkbox"]:checked + label span {
 .instructions-line{
   display: none;
 }
+/* BIAS Lines */
 .bias{
   writing-mode: vertical-rl;
   text-orientation: sideways;
@@ -98,6 +173,7 @@ input[type="checkbox"]:checked + label span {
   border: 3px solid gold;
   outline: none;
 }
+/* FADE COLORS */
 #red1 {
   background: magenta;
   color: magenta;
@@ -115,7 +191,7 @@ input[type="checkbox"]:checked + label span {
   color: #5E161E;
 }
 
-#purple {
+#purple1 {
   background: purple;
   color: purple;
 }
@@ -136,12 +212,13 @@ input[type="checkbox"]:checked + label span {
   background: #22008D;
   color: #22008D;
 }
+/* SORT BUTTON */
 .sort-btn {
   width: 30%;
   margin: 2.5rem auto;
   font-size:1.3rem;
 }
-
+/* MAIN SECTION */
 #main {
   display:flex;
   flex-wrap:wrap;
@@ -433,7 +510,7 @@ input[type="checkbox"]:checked + label span {
     font-size:3.7rem;
 }
 .footer-logo .row{
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .footer-links {
   margin: 0;
@@ -443,7 +520,7 @@ input[type="checkbox"]:checked + label span {
   display:inline-flex;
   }
 .contact-ads a{
-  font-size:1.5rem;
+  font-size:1rem;
   margin: 0 1rem;
 }
 .contact-ads li:first-child {
@@ -477,14 +554,10 @@ input[type="checkbox"]:checked + label span {
 .ball4{
   transform: rotate(270deg);
 }
-.footer-copyright {
-    width: 100%;
-    height: 50px;
 
-}
 .footer-copyright-row{
     border-top: 1px lightgray solid;
-
+    height: 1rem;
   }
 /* MOBILE */
 @media only screen and (min-width:360px) and (max-width:420px) {
@@ -494,10 +567,34 @@ input[type="checkbox"]:checked + label span {
     font-family: 'Maven Pro', sans-serif;
   }
   .navbar{
-   padding-bottom: 1.5rem;
+    height: 3.5rem;
+    padding:0 0 1%;
+  }
+  .navbar button{
+    margin-left: 3%;
+    margin-top: 2%;
   }
   .navbar button:hover { outline: 0 !important }
-
+  .logo-row{
+    display: none;;
+  }
+  .navbar-brand{
+    width: 22.5%;
+    padding:0;
+  }
+  .logo-holder{
+     width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+  }
+  #logo-text{
+    position: relative;
+    border:none;
+  }
+  .navbar-nav{
+    padding-left: 2%;
+  }
   .header{
     padding-top: 15%;
     margin-bottom: 0;
@@ -523,6 +620,15 @@ input[type="checkbox"]:checked + label span {
   .row{
     margin: 0;
   }
+  .mobile-filters{
+    display:inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    padding:0;
+  }
+  .desktop-filters{
+    display:none;
+  }
   input {
 
    outline:none;
@@ -540,6 +646,31 @@ input[type="checkbox"]:checked + label span {
   .bias{
     display: none;
   }
+  #instructions-line-2 {
+    font-size: 1rem;
+    z-index: 1;
+    margin: 1rem auto;
+    color: #290095;
+}
+
+  #instructions-line-2:before {
+    border-bottom: 2px solid #290095;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    width: 95%;
+    z-index: -1;
+  }
+
+  #instructions-line-2 span {
+      /* to hide the lines from behind the text, you have to set the background color the same as the container */
+      background: #FEF0EB;
+      padding: 0 15px;
+  }
+
   #instructions-line {
     font-size: 1rem;
     z-index: 1;
@@ -573,7 +704,9 @@ input[type="checkbox"]:checked + label span {
   .filter-box{
     height: 4rem;
     width: 100%;
-    padding-top: 1rem;
+  }
+  .filter-box .row{
+    justify-content:center;
   }
   .fade-box{
     display:none;
