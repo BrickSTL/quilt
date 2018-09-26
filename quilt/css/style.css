@@ -11,7 +11,6 @@ nav{
   width: 100%;
   z-index: 3;
   background-color: #fef0ea;
-  height: 5rem;
 }
 .navbar-brand{
   border: 1px solid #495057;
@@ -67,7 +66,7 @@ nav{
   min-width: 15rem;
 }
 #form-item{
-  margin:4% 0 6%;
+  margin:4% auto 6%;
   padding:0;
 }
 .form-btns{
@@ -90,9 +89,6 @@ nav{
 }
 .header {
   padding-top: 10%;
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: 7%;
 }
 /* HEADER */
 .header.row{
@@ -150,12 +146,15 @@ input[type="checkbox"]:checked + label span {
 .bias{
   writing-mode: vertical-rl;
   text-orientation: sideways;
-  padding-bottom: 10%;
+  padding-bottom: 13%;
   color: #101493;
   font-size: .9rem;
 }
 .bias-lib{
   transform: rotate(180deg);
+}
+.bias-con{
+  padding-bottom:23%;
 }
 .fade-check{
   height: 2.5rem;
@@ -238,12 +237,10 @@ input[type="checkbox"]:checked + label span {
 /* ---- .element-item ---- */
 
 .element-item {
-  position: relative;
-  float: left;
   height: 15rem;
-  padding: 10px;
-  background: #888;
-  color: #262524;
+  border:black 1px solid;
+  color: white;
+  padding: 1rem;
 }
 
 .element-item > * {
@@ -385,25 +382,8 @@ input[type="checkbox"]:checked + label span {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* .element-item.red4         { background: #670317; background: #670317; }
-.element-item.red3  { background: #990000; background: #990000; }
-.element-item.red2      { background: red; background: red; }
-.element-item.red1        { background: #FF00FE; background: #FF00FE; }
-.element-item.purple      { background: purple; background: purple; }
-.element-item.blue1 { background: lightblue; background: lightblue; }
-.element-item.blue2       { background: #6E00ED; background: #6E00ED; }
-.element-item.blue3        { background: blue; background: blue; }
-.element-item.blue4       { background: #22008D; background: #22008D; } */
 
 .element-item.is-filtered-out { opacity: 0.2 }
-/*NEWS-BOXES*/
-.news-box{
-
-  border:black 1px solid;
-  color: white;
-  padding: 1rem;
-}
-
 
 .subline{
   background: black;
@@ -411,10 +391,6 @@ input[type="checkbox"]:checked + label span {
 }
 
 /* EMAIL LINE */
-.email-line{
-  margin: 0;
-  padding: 0;
-}
 .holder{
   margin-top:3%;
   z-index:2;
@@ -424,32 +400,17 @@ input[type="checkbox"]:checked + label span {
 }
 .emailer{
   border:3px solid black;
-  padding: 1rem;
 }
 .emailer span{
-  font-size:1.7rem;
+  font-size:1.8rem;
 }
-.form-group{
- margin-left: 5%;
-}
-.form-group {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-#email-label{
-
-}
-.form-control{
+.form-control {
     background: transparent;
-  border: none;
-  display: block;
-  outline: none;
-  width: 80%;
-  height: 30p;
-  margin: 0 auto;
-  color: #333;
-  border-bottom: 1px solid black;
-  border-radius: 0;
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    border-radius: 0;
 }
 .form-control:focus{
   background:transparent;
@@ -465,7 +426,7 @@ input[type="checkbox"]:checked + label span {
     height: 7rem;
     width: 5rem;
   }
-  #email-button:hover{
+#email-button:hover{
     background-color:lightgray;
 }
 .btn .fa{
@@ -499,13 +460,6 @@ input[type="checkbox"]:checked + label span {
   opacity:.6;
 }
 /* FOOTER  */
-.footer-content{
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-  }
-  .footer-content .col-md-2{
-    margin-left: 4%;
-  }
 .footer-logo h2 {
     font-size:3.7rem;
 }
@@ -518,23 +472,28 @@ input[type="checkbox"]:checked + label span {
 .contact-ads {
   list-style:none;
   display:inline-flex;
+  color: #073791;
   }
 .contact-ads a{
   font-size:1rem;
   margin: 0 1rem;
+  color: #073791;
 }
 .contact-ads li:first-child {
-  border-right:1px solid #847CFB;
+  border-right:1px solid #073791;
 }
 .footer-head {
     font-size: 1.5rem;
-    color: #6C89F8;
+    color: #073791;
     border-bottom: 1px solid;
     border-radius: 0;
   }
   .footer-links a {
     font-size: 1.1rem;
     color: #6c757d;
+}
+.footer-copyright span{
+  color:#073791;
 }
 .ball{
   background-image:url("../resources/images/OvalShadesLogo.png") ;
@@ -557,7 +516,6 @@ input[type="checkbox"]:checked + label span {
 
 .footer-copyright-row{
     border-top: 1px lightgray solid;
-    height: 1rem;
   }
 /* MOBILE */
 @media only screen and (min-width:360px) and (max-width:420px) {
